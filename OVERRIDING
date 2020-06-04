@@ -1,0 +1,35 @@
+import java.util.*;
+import java.util.Scanner;
+class Fruit{
+String name,taste;
+public void eat()
+{
+System.out.println("ENTER THE NAME OF THE FRUIT:");
+Scanner s=new Scanner(System.in);
+name=s.nextLine();
+System.out.println("Taste of fruit:");
+taste=s.nextLine();
+System.out.println("NAME OF FRUIT IS:"+name);
+System.out.println("TASTE OF FRUIT IS:"+taste);
+}
+}
+class Apple extends Fruit{
+public void eat(){
+System.out.println("Name of fruit is apple");
+System.out.println("taste of fruit is sweet");
+}
+}
+class Orange extends Fruit{
+public void eat(){
+System.out.println("Nmae of fruit is orange");
+System.out.println("Tatste of fruit is sour");
+}
+}
+class Poly{
+public static void main(String args[]){
+Apple A=new Apple();
+A.eat();
+Orange O=new Orange();
+O.eat();
+}
+}
