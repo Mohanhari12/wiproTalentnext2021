@@ -1,0 +1,47 @@
+import java.util.*;
+import java.util.Scanner;
+class Shape{
+	void draw(){
+		System.out.println("DRAWING SHAPE");
+	}
+	void erase(){
+		System.out.println("ERASING SHAPE");
+	}
+}
+class Circle extends Shape{
+	void draw(){
+		System.out.println("DRAWING CIRCLE");
+	}
+	void erase(){
+		System.out.println("Erasing cirlce");
+	}
+}
+class Triangle extends Shape{
+	void draw(){
+		System.out.println("DRAWING TRIANGLE");
+	}
+	void erase(){
+		System.out.println("ERASING CIRCLE");
+	}
+}
+class Square extends Shape{
+	void draw(){
+		System.out.println("Drawing Square");
+	}
+	void erase(){
+		System.out.println("ERASING CIECLE");
+	}
+}
+class Poly{
+public static void main(String args[]){
+	Shape c=new Circle();
+	c.draw();
+	c.erase();
+	Shape t=new Triangle();
+	t.draw();
+	t.erase();
+	Shape s=new Square();
+	s.draw();
+	s.erase();
+}
+}
