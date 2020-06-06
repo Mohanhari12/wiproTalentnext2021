@@ -1,0 +1,26 @@
+import java.util.*;
+import java.util.Scanner;
+class Patient{
+    Scanner s=new Scanner(System.in);
+    String name;
+    double height,weight;
+    Patient(double w,double h)
+    {
+        weight=w;
+        height=h;
+    }
+    double BMI()
+    {
+       
+       return ((weight/(height*height))*703);
+    }
+}
+    class Patients
+{
+  public static void main (String[] args)
+ {
+  Patient p=new Patient(65,156);
+  System.out.println("The BMI:"+p.BMI());
+  
+ }
+}
